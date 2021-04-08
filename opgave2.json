@@ -29,3 +29,102 @@
     ],
     "version": 6
  }
+
+{
+	"type": "object",
+	"properties": {
+		"vat": {
+			"type": "number",
+			"minimum": 10000000,
+			"maximum": 99999999
+		},
+		"name": {
+			"type": "string"
+		},
+		"address": {
+			"type": "string"
+		},
+		"zipcode": {
+			"type": "number",
+			"minimum": 1000,
+			"maximum": 9999
+		},
+		"city": {
+			"type": "string"
+		},
+		"phone": {
+			"type": "number",
+			"minimum": 10000000,
+			"maximum": 99999999
+		},
+		"email": {
+			"type": "string"
+		},
+		"employees": {
+			"type": "string"
+		},
+		"industrydesc": {
+			"type": "string"
+		},
+		"companydesc": {
+			"type": "string"
+		},
+		"creditbankrupt": {
+			"type": "boolean"
+		},
+		"productionunits": {
+			"type": "array",
+			"items": [{
+				"type": "object",
+				"properties": {
+					"pno": {
+						"type": "number",
+						"minimum": 10000000,
+						"maximum": 99999999
+					},
+					"name": {
+						"type": "string"
+					},
+					"address": {
+						"type": "string"
+					},
+					"zipcode": {
+						"type": "number",
+						"minimum": 1000,
+						"maximum": 9999
+					},
+					"city": {
+						"type": "string"
+					},
+					"phone": {
+						"type": "number",
+						"minimum": 10000000,
+						"maximum": 99999999
+					}
+				},
+				"type": "object",
+				"properties": {
+					"email": {
+						"type": "string"
+					},
+					"startdate": {
+						"type": "string"
+					},
+					"enddate": {
+						"type": "string"
+					},
+					"employees": {
+						"type": "string"
+					},
+					"industrydesc": {
+						"type": "string"
+					}
+				}
+			}]
+
+		},
+		"version": {
+			"type": "number"
+		}
+	}
+}

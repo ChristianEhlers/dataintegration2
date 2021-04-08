@@ -5,6 +5,7 @@
 	"description": "A geographical coordinate.",
 	"required": ["latitude", "longitude"],
 	"additionalProperties": false,
+	
 	"type": "object",
 	"properties": {
 		"latitude": {
